@@ -1,0 +1,169 @@
+.confirmation-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.confirmation-translate-btn {
+  position: fixed;
+  top: 5.5rem;
+  right: 1.5rem;
+  z-index: 1100;
+  padding: 0.65rem 1.3rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1e6bb8;
+  background: white;
+  border: 2px solid #1e6bb8;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(30, 107, 184, 0.35);
+  transition: all 0.25s ease;
+}
+
+[dir="rtl"] .confirmation-translate-btn {
+  right: auto;
+  left: 1.5rem;
+}
+
+.confirmation-translate-btn:hover {
+  background: #1e6bb8;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 107, 184, 0.4);
+}
+
+.confirmation-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.confirmation-card h1 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.confirmation-message {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.case-summary {
+  background: #e3f2fd;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: right;
+}
+
+.case-summary h2 {
+  color: #1e6bb8;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+.summary-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.summary-value {
+  color: #333;
+  font-weight: 600;
+}
+
+.renewal-date {
+  color: #1565c0;
+  font-size: 1.1rem;
+}
+
+.status {
+  color: #28a745;
+  text-transform: uppercase;
+}
+
+.alert-box {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: right;
+}
+
+.alert-box h3 {
+  color: #856404;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.alert-box p {
+  color: #856404;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.alert-box p:last-child {
+  margin-bottom: 0;
+}
+
+.alert-box strong {
+  color: #1565c0;
+  font-size: 1.1rem;
+}
+
+.confirmation-actions {
+  margin-top: 2rem;
+}
+
+.home-button {
+  background: linear-gradient(135deg, #1e6bb8 0%, #1565c0 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(30, 107, 184, 0.4);
+}

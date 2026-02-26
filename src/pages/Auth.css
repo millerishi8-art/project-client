@@ -1,0 +1,365 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 2rem;
+}
+
+.auth-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-card h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1e6bb8;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper .password-input {
+  padding-right: 3rem;
+}
+
+[dir="rtl"] .password-input-wrapper .password-input {
+  padding-right: 0.75rem;
+  padding-left: 3rem;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0.35rem;
+  cursor: pointer;
+  color: #666;
+  font-size: 1.25rem;
+  line-height: 1;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.password-toggle-btn:hover {
+  color: #1e6bb8;
+  background: rgba(30, 107, 184, 0.1);
+}
+
+[dir="rtl"] .password-toggle-btn {
+  right: auto;
+  left: 0.5rem;
+}
+
+.password-icon {
+  display: inline-block;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #42a5f5 0%, #1e88e5 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 1rem;
+}
+
+.auth-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 107, 184, 0.4);
+}
+
+.auth-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.error-message-verify {
+  background: #fff3e0;
+  color: #e65100;
+  border: 1px solid #ff9800;
+  font-weight: 500;
+  text-align: center;
+}
+
+.error-hint {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+.success-message {
+  background: #efe;
+  color: #262;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.check-spam-tip {
+  background: #e3f2fd;
+  color: #1a3a52;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border: 1px solid #90caf9;
+  text-align: center;
+}
+
+.verify-required-notice {
+  background: #fff8e6;
+  border: 1px solid #e6c84c;
+  color: #664d00;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.resend-verification-btn {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #1e6bb8;
+  background: #e3f2fd;
+  border: 1px solid #1e6bb8;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.resend-verification-btn:hover:not(:disabled) {
+  background: #bbdefb;
+}
+
+.resend-verification-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.verification-options {
+  margin-bottom: 1rem;
+}
+
+.verification-options-always {
+  padding: 1rem;
+  background: #e3f2fd;
+  border-radius: 12px;
+  border: 1px solid #90caf9;
+}
+
+.verification-intro {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: #1a3a52;
+  line-height: 1.5;
+}
+
+.verification-or {
+  text-align: center;
+  color: #666;
+  margin: 0.75rem 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.verification-options .phone-btn {
+  margin-top: 0.25rem;
+}
+
+.email-verify-code-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.email-verify-code-form .email-code-input {
+  margin-bottom: 0;
+}
+
+.phone-verify-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.phone-code-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.phone-code-input:focus {
+  outline: none;
+  border-color: #1e6bb8;
+}
+
+.verify-intro-text {
+  text-align: center;
+  color: #555;
+  margin-bottom: 1.25rem;
+}
+
+.verify-email-display {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.verify-code-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.verify-code-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.verify-code-input:focus {
+  outline: none;
+  border-color: #1e6bb8;
+}
+
+.verify-email-card .verify-message {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.verify-loading {
+  color: #666;
+}
+
+.verify-success {
+  color: #262;
+}
+
+.verify-error {
+  color: #c33;
+}
+
+.verify-warning {
+  color: #b85c00;
+}
+
+.verify-dev-code {
+  color: #066;
+  font-size: 0.95rem;
+}
+
+.verify-info {
+  color: #1e6bb8;
+}
+
+.verify-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.auth-link a {
+  color: #1e6bb8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.auth-link-forgot {
+  margin-top: 0.75rem;
+}
+
+.auth-link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: #1e6bb8;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-link-button:hover {
+  text-decoration: underline;
+}
+
+.form-group input.input-readonly {
+  background: #f5f5f5;
+  color: #555;
+  cursor: default;
+}
